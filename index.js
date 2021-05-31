@@ -49,6 +49,7 @@ client.on("message", async message => {
                     const dispatch = conn.play("./assets/mikuum.mp3");
                     dispatch.on("finish", finish => {
                         message.member.voice.channel.leave();
+                        message.reply("I'm done cooming :3");
                     });
                 })
                 .catch(err => {
@@ -56,6 +57,18 @@ client.on("message", async message => {
                     message.member.voice.channel.leave();
                     message.reply("HatsuneMikuum unable to join voice channel");
                 });
+            break;
+        case "-d":
+            const voiceConn = message.member.voice.channel;
+            if (!voiceConn) {
+                break;
+            }
+
+            if (client.voice.connections.size > 0) {
+                voiceConn.leave();
+                message.reply("I'm done cooming :3");
+            }
+
             break;
         default:
             break;
