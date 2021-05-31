@@ -1,5 +1,5 @@
 # HatsuneMikuum
-Feeling down in the dumps? Are the VC's a little empty tonight? Fear not, HatsuneMikuum is here to fill that void!
+Feeling down in the dumps? Are the VC's a little empty tonight? Fear not, The HatsuneMikuum Discord Bot is here to fill that void!
 
 *Don't ask why I made this.*
 
